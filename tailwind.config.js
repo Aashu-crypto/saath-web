@@ -12,6 +12,18 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        primary: "#5E4DB0", // Example with Deep Teal
+        textPrimary: "#2d2d2d",
+        textSecondary: "#6b7280",
+        background: "#f7f9fc",
+        highlight: "#ff5722",
+      },
+      fontFamily: {
+        Dream: ["Dream", "sans-serif"],
+        DreamBold: ["DreamBold", "sans-serif"],
+        Caveat: ["Caveat", "sans-serif"],
+      },
     },
   },
   plugins: [],

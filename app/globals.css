@@ -31,3 +31,24 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'Dream';
+  src: url('/fonts/Dream_orphans.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DreamBold';
+  src: url('/fonts/Dream_orphans_Bd.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('/fonts/Caveat.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
