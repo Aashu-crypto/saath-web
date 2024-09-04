@@ -4,9 +4,7 @@ function SaathiServices() {
   return (
     <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-16 px-6 md:px-16 lg:px-24 flex flex-col md:flex-row items-center md:items-start">
       <div className="md:w-1/2 lg:w-2/3 mb-8 md:mb-0">
-        <h2 className="text-6xl font-Dream text-primary mb-6 text-center">
-        
-        </h2>
+        <h2 className="text-6xl font-Dream text-primary mb-6 text-center"></h2>
         <p className="text-xl text-gray-700 mb-6 leading-relaxed font-serif">
           Saathi provides a wide range of services to make life easier for your
           loved ones and give you peace of mind. Whether it&apos;s providing
