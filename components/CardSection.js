@@ -31,7 +31,7 @@ const CardsSection = () => {
 
   return (
     <section className="py-16 px-6 md:px-16 lg:px-24 bg-gradient-to-r from-blue-50 to-indigo-50">
-      <h2 className="text-4xl font-Caveat text-center text-gray-800 mb-12">
+      <h2 className="text-4xl font-serif text-center text-gray-800 mb-12">
         Our Core Values
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

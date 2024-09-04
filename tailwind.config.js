@@ -23,6 +23,7 @@ module.exports = {
         Dream: ["Dream", "sans-serif"],
         DreamBold: ["DreamBold", "sans-serif"],
         Caveat: ["Caveat", "sans-serif"],
+   
       },
     },
   },

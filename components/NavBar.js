@@ -16,29 +16,27 @@ function NavBar() {
 
   return (
     <nav
-      className={`sticky top-0 z-20 shadow-lg transition-opacity  font-DreamBold text-2xl duration-300 p-2 ${
+      className={`sticky top-0 z-20 shadow-lg transition-opacity  font-DreamBold text-2xl duration-300 p-1 ${
         scrollY > 0 ? "bg-white/70" : "bg-white"
       }`}
     >
       <div className="flex justify-between items-center p-4 px-12">
-        <a href="/" className="flex gap-2 items-center tracking-wide">
+        <a href="/" className="flex gap-2 items-center tracking-wide text-primary text-3xl">
           Saathi
         </a>
 
         <div className={`${open ? "block" : "hidden"} md:flex`}>
           <ul className="flex flex-col md:flex-row md:gap-8 absolute top-16 right-5 md:static bg-white md:bg-transparent">
-            {["Home", "About Us", "Services", "Contact Us"].map(
-              (item, index) => (
-                <li key={index} className="md:hover:underline">
-                  <a
-                    href={`#${item.replace(" ", "").toLowerCase()}`}
-                    className="cursor-pointer text-base font-medium text-textPrimary hover:text-primary"
-                  >
-                    {item}
-                  </a>
-                </li>
-              )
-            )}
+            {["About Us", "Services", "Contact Us"].map((item, index) => (
+              <li key={index} className="md:hover:underline">
+                <a
+                  href={`#${item.replace(" ", "").toLowerCase()}`}
+                  className="cursor-pointer text-base font-medium text-textPrimary hover:text-primary font-serif"
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 

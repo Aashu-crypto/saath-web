@@ -12,35 +12,43 @@ const iconMap = {
 };
 
 // Subscription Card Component
+// Subscription Card Component
 const SubscriptionCard = ({ title, description, price, icon, colors }) => {
   const IconComponent = iconMap[icon];
 
   return (
     <motion.div
-      className="rounded-xl overflow-hidden shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl"
+      className="rounded-md overflow-hidden shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-primary hover:text-white group border-primary border"
       style={{
-        backgroundImage: `linear-gradient(135deg, ${colors[0]} 0%, ${colors[1]} 100%)`,
+        minHeight: "350px", // Set a minimum height to control card size
       }}
       whileHover={{ scale: 1.05 }} // Scale up on hover
       whileTap={{ scale: 0.95 }} // Scale down on tap/click
     >
-      <div className="p-8 flex flex-col items-center text-center h-full">
+      <div className="p-6 flex flex-col items-center text-center h-full">
+        {" "}
+        {/* Reduce padding */}
         <motion.div
-          className="flex items-center justify-center mb-6 bg-white p-5 rounded-full shadow-lg"
+          className="flex items-center justify-center mb-4 bg-white p-4 rounded-full shadow-lg" // Reduced padding
           whileHover={{ rotate: 360 }} // Rotate icon on hover
           transition={{ duration: 1 }}
         >
-          <IconComponent className="text-6xl text-primary" />
+          <IconComponent className="text-5xl text-primary" />{" "}
+          {/* Reduce icon size */}
         </motion.div>
-        <h3 className="text-3xl font-semibold text-white mb-4">{title}</h3>
-        <p className="text-lg text-white opacity-90 mb-6 whitespace-pre-line leading-relaxed">
+        <h3 className="text-2xl font-semibold mb-3 group-hover:text-white">
+          {" "}
+          {/* Adjust font size */}
+          {title}
+        </h3>
+        <p className="text-sm text-primary opacity-90 mb-4 whitespace-pre-line leading-relaxed group-hover:text-white">
           {description}
         </p>
-        <div className="text-3xl font-bold text-white mb-8 whitespace-pre-line">
+        <div className="text-2xl font-bold mb-4 whitespace-pre-line text-primary group-hover:text-white">
           {price}
         </div>
         <motion.button
-          className="mt-auto px-8 py-3 bg-white text-primary font-semibold rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
+          className="mt-auto px-6 py-2 bg-white text-primary font-semibold rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
           whileHover={{ scale: 1.1 }} // Slightly enlarge button on hover
           whileTap={{ scale: 0.95 }} // Slightly reduce button size on tap
           onClick={() => alert(`Subscribed to ${title} plan`)}
@@ -58,41 +66,41 @@ const SubscriptionPage = () => {
     {
       id: "1",
       title: "Basic",
-      description: `✓ Weekly 1-hour call\n✓ One house visit\n✓ Digital media in "My Feed"`,
+      description: `• One-hour call with patrons every week.\n• Includes one in-home visit to check health, take a photo, and ensure well-being.\n• All interactions/digital media uploaded to the ‘My Feed’ section of the app.\n• Offered at $30/month (Rs. 2500/month).`,
       price: "$30/m\n(Rs. 2500/m)",
       icon: "star-outline",
-      colors: ["#A6FFCB", "#12D8FA"], // Gradient from mint green to blue
+      colors: ["rgba(186, 220, 188, 0.8)", "#4CAF50"], // Light mint green with dark green border
     },
     {
       id: "2",
       title: "Bronze",
-      description: `✓ Weekly 1-hour call\n✓ Two house visits\n✓ 2 hours of errands\n✓ Digital media in "My Feed"`,
+      description: `• One-hour call with patrons every week.\n• Two in-home visits to check health, take a photo, and ensure well-being.\n• Up to 2 hours of running errands on behalf of patrons.\n• Offered at $40/month (Rs. 3500/month).`,
       price: "$40/m\n(Rs. 3500/m)",
       icon: "medal-outline",
-      colors: ["#FFD194", "#D1913C"], // Gradient from peach to orange
+      colors: ["rgba(255, 224, 178, 0.8)", "#FFA726"], // Soft peach with deep orange border
     },
     {
       id: "3",
       title: "Silver",
-      description: `✓ Weekly 1-hour call\n✓ Weekly house visits\n✓ 4 hours of errands`,
+      description: `• One-hour call with patrons every week.\n• Weekly in-home visits to check health, take a photo, and ensure well-being.\n• Up to 4 hours of running errands on behalf of patrons.\n• Driving patrons (up to 2) to and from a destination within 4 hours.\n• Offered at $60/month (Rs. 5000/month).`,
       price: "$60/m\n(Rs. 5000/m)",
       icon: "trophy-outline",
-      colors: ["#D4FC79", "#96E6A1"], // Gradient from lime to green
+      colors: ["rgba(178, 235, 242, 0.8)", "#00ACC1"], // Light aqua with dark teal border
     },
     {
       id: "4",
       title: "Gold",
-      description: `✓ Weekly 1-hour call\n✓ Weekly house visits\n✓ 8 hours of errands`,
+      description: `• One-hour call with patrons every week.\n• Weekly in-home visits to check health, take a photo, and ensure well-being.\n• Up to 8 hours of running errands on behalf of patrons.\n• Offered at $80/month (Rs. 6500/month).`,
       price: "$80/m\n(Rs. 6500/m)",
       icon: "ribbon-outline",
-      colors: ["#FDC830", "#F37335"], // Gradient from yellow to orange
+      colors: ["rgba(244, 213, 178, 0.8)", "#FF9800"], // Light sand with burnt orange border
     },
   ];
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center px-8 py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
       <motion.h1
-        className="text-6xl font-Caveat text-center text-gray-800 mb-16"
+        className="text-5xl font-serif text-center text-gray-800 mb-16"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

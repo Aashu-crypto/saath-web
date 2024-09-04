@@ -15,7 +15,7 @@ const TestimonialCard = ({ name, feedback, avatar, rating }) => {
         alt={name}
         className="w-24 h-24 rounded-full mb-4 shadow-md"
       />
-      <h3 className="text-3xl font-extrabold text-gray-800 mb-2">{name}</h3>
+      <h3 className="text-3xl font-bold text-gray-800 mb-2">{name}</h3>
       <p className="text-lg text-gray-600 mb-4">{feedback}</p>
       <div className="flex justify-center">
         {Array(rating)
@@ -86,7 +86,7 @@ const TestimonialsSection = () => {
 
   return (
     <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-16 px-6 md:px-16 lg:px-24">
-      <h2 className="text-5xl font-Caveat text-center text-gray-800 mb-16">
+      <h2 className="text-5xl font-serif text-center text-gray-800 mb-16">
         What Our Users Say
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">

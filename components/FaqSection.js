@@ -63,7 +63,7 @@ const FAQSection = () => {
   return (
     <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
       <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-        <h2 className="text-3xl font-Caveat text-center text-gray-800 mb-8">
+        <h2 className="text-5xl font-serif text-center text-gray-800 mb-8">
           Frequently Asked Questions
         </h2>
         <div className="divide-y divide-gray-200">

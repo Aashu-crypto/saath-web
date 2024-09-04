@@ -74,7 +74,7 @@ const ServicesComponent = () => {
   return (
     <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-16 px-6 md:px-16 lg:px-24">
       <div className="text-center mb-12">
-        <h2 className="text-5xl font-Caveat text-gray-800 mb-4">
+        <h2 className="text-5xl font-serif text-gray-800 mb-4">
           Services We Offer
         </h2>
         <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
