@@ -16,7 +16,7 @@ function NavBar() {
 
   return (
     <nav
-      className={`sticky top-0 z-20 shadow-lg transition-opacity  font-DreamBold text-2xl duration-300 p-3 ${
+      className={`sticky top-0 z-20 shadow-lg transition-opacity  font-DreamBold text-2xl duration-300 p-2 ${
         scrollY > 0 ? "bg-white/70" : "bg-white"
       }`}
     >

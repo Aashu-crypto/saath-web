@@ -97,7 +97,7 @@ const SubscriptionPage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        Choose Your Subscription Plan
+        Subscription Plans
       </motion.h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 w-full max-w-7xl">
         {packages.map((pkg, index) => (

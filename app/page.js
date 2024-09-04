@@ -13,7 +13,7 @@ function Home() {
       <SaathiServices />
       <CardsSection />
       <SaathisSection />
-      <ServicesComponent/>
+      {/* <ServicesComponent/> */}
       <SubscriptionPage />
 
       <TestimonialsSection />

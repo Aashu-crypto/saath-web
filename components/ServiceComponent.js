@@ -75,7 +75,7 @@ const ServicesComponent = () => {
     <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-16 px-6 md:px-16 lg:px-24">
       <div className="text-center mb-12">
         <h2 className="text-5xl font-Caveat text-gray-800 mb-4">
-          Our Available Services
+          Services We Offer
         </h2>
         <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
           We offer a range of services designed to meet your needs and ensure
