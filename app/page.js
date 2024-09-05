@@ -6,7 +6,7 @@ import ServicesComponent from "@/components/ServiceComponent";
 import SubscriptionPage from "@/components/Subscription";
 import TestimonialsSection from "@/components/Testimonial";
 import React from "react";
-
+//how we work
 function Home() {
   return (
     <div>

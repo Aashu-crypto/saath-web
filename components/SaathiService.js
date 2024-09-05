@@ -14,9 +14,7 @@ function SaathiServices() {
           alt="Happy Family"
           className=""
         />
-        {/* Lighter Overlay */}
-        <div className="absolute inset-0 bg-primary opacity-50 rounded-lg"></div>
-        {/* Increase the opacity to make the image appear lighter */}
+        <div className="absolute inset-0 bg-primary opacity-30 rounded-lg"></div>
       </div>
 
       {/* Content */}

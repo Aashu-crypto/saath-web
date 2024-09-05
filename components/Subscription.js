@@ -53,7 +53,7 @@ const SubscriptionCard = ({ title, description, price, icon, colors }) => {
           whileTap={{ scale: 0.95 }} // Slightly reduce button size on tap
           onClick={() => alert(`Subscribed to ${title} plan`)}
         >
-          Subscribe
+          Download App
         </motion.button>
       </div>
     </motion.div>
